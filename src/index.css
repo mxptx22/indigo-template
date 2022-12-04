@@ -1,0 +1,885 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ul {
+        @apply list-square ml-4 py-1;
+    }
+
+    li {
+        @apply pl-2;
+    }
+
+    p {
+        @apply py-1 leading-10;
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 100;
+        src: url("./assets/fonts/varta/Varta-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 200;
+        src: url("./assets/fonts/varta/Varta-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 300;
+        src: url("./assets/fonts/varta/Varta-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 400;
+        src: url("./assets/fonts/varta/Varta-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 500;
+        src: url("./assets/fonts/varta/Varta-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 600;
+        src: url("./assets/fonts/varta/Varta-SemiBold.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 700;
+        src: url("./assets/fonts/varta/Varta-SemiBold.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 800;
+        src: url("./assets/fonts/varta/Varta-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "Varta";
+        font-weight: 900;
+        src: url("./assets/fonts/varta/Varta-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 100;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 100;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 200;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 200;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 300;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 300;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 400;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 400;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 500;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 500;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-MediumItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 600;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-SemiBold.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 600;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-SemiBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 700;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 700;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 800;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 800;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 900;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-ExtraBold.ttf");
+    }
+
+    @font-face {
+        font-family: "MerriwaterSans";
+        font-weight: 900;
+        font-style: italic;
+        src: url("./assets/fonts/merriwatersans/MerriweatherSans-ExtraBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        src: url("./assets/fonts/merriwater/MerriweatherSans.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 100;
+        src: url("./assets/fonts/merriwater/MerriweatherSans-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 100;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 200;
+        src: url("./assets/fonts/merriwater/Merriweather-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 200;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 300;
+        src: url("./assets/fonts/merriwater/Merriweather-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 300;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 400;
+        src: url("./assets/fonts/merriwater/Merriweather-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 400;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 500;
+        src: url("./assets/fonts/merriwater/Merriweather-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 500;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-MediumItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 600;
+        src: url("./assets/fonts/merriwater/Merriweather-SemiBold.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 600;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-SemiBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 700;
+        src: url("./assets/fonts/merriwater/Merriweather-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 700;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 800;
+        src: url("./assets/fonts/merriwater/Merriweather-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 800;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 900;
+        src: url("./assets/fonts/merriwater/Merriweather-ExtraBold.ttf");
+    }
+
+    @font-face {
+        font-family: "Merriwater";
+        font-weight: 900;
+        font-style: italic;
+        src: url("./assets/fonts/merriwater/Merriweather-ExtraBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 100;
+        src: url("./assets/fonts/yrsa/Yrsa-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 100;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 200;
+        src: url("./assets/fonts/yrsa/Yrsa-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 200;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 300;
+        src: url("./assets/fonts/yrsa/Yrsa-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 300;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 400;
+        src: url("./assets/fonts/yrsa/Yrsa-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 400;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 500;
+        src: url("./assets/fonts/yrsa/Yrsa-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 500;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-MediumItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 600;
+        src: url("./assets/fonts/yrsa/Yrsa-SemiBold.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 600;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-SemiBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 700;
+        src: url("./assets/fonts/yrsa/Yrsa-SemiBold.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 700;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-SemiBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 800;
+        src: url("./assets/fonts/yrsa/Yrsa-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 800;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 900;
+        src: url("./assets/fonts/yrsa/Yrsa-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "Yrsa";
+        font-weight: 900;
+        font-style: italic;
+        src: url("./assets/fonts/yrsa/Yrsa-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 100;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Thin.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 100;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-ThinItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 200;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Thin.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 200;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-ThinItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 300;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Light.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 300;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-LightItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 400;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 400;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Italic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 500;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 500;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-MediumItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 600;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Medium.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 600;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-MediumItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 700;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Bold.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 700;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-BoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 800;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-ExtraBold.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 800;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-ExtraBoldItalic.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 900;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-Black.ttf");
+    }
+
+    @font-face {
+        font-family: "SmallcapsSC";
+        font-weight: 900;
+        font-style: italic;
+        src: url("./assets/fonts/smallcapsfont/AlegreyaSansSC-BlackItalic.ttf");
+    }
+}
+
+@layer components {
+    .btn-pill {
+        @apply py-1 px-3 font-sc font-normal flex items-center gap-2 uppercase transition-all relative;
+        color: initial;
+        fill: initial;
+        border-color: initial;
+        z-index: 0;
+        cursor: pointer;
+    }
+
+    .btn-pill-mini {
+        @apply py-1.5 px-1.5 aspect-square font-sc font-normal flex items-center uppercase transition-all relative;
+        color: initial;
+        fill: initial;
+        border-color: initial;
+        z-index: 0;
+        cursor: pointer;
+    }
+
+    .btn-pill:hover {
+        color: white;
+        fill: white;
+    }
+
+    .btn-pill-mini:hover {
+        transform: scale(1.2);
+    }
+
+    .btn-pill::before {
+        @apply border-2 rounded-xl transition-all absolute;
+        color: inherit;
+        fill: inherit;
+        border-color: inherit;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    .btn-pill:hover::before {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    .btn-pill::after {
+        @apply border-0 rounded-xl transition-all absolute;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    .btn-pill:hover::after {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .btn-underlined {
+        @apply h-full flex justify-center items-center gap-2 p-1.5 box-content border-b-2 border-inherit font-accent uppercase;
+        color: inherit;
+        fill: inherit;
+        border-color: inherit;
+        z-index: 0;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    .btn-back {
+        @apply h-[100%] flex justify-center items-center p-1.5 box-content border-b-2 border-inherit font-accent uppercase;
+        color: inherit;
+        fill: inherit;
+        border-color: inherit;
+        z-index: 0;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.5s;
+    }
+
+    .btn-back:hover {
+        @apply -mt-[50%];
+    }
+
+    .btn-underlined:hover {
+        @apply h-full flex justify-center items-center gap-2 p-1.5 box-content border-b-2 border-inherit font-accent uppercase;
+        color: inherit;
+        fill: inherit;
+        border-color: inherit;
+        z-index: 0;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .btn-underlined::after {
+        @apply text-sm font-light font-sc tracking-wide lowercase;
+        content: "LINK TO";
+        position: absolute;
+        top: 120%;
+        transition: all 0.5s;
+        opacity: 0;
+        transform: rotateX(85deg);
+    }
+
+    .btn-underlined:hover::after {
+        top: 120%;
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    .btn-back::after {
+        @apply text-xs flex justify-center items-center font-light font-sc tracking-wide lowercase;
+        content: "BACK";
+        position: absolute;
+        top: 100%;
+        transition: all 0.5s;
+        opacity: 0;
+        transform: rotateX(85deg);
+    }
+
+    .btn-back:hover::after {
+        top: 115%;
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+
+    .btn-extra {
+        @apply h-14 flex gap-4 items-center p-4 stroke-none relative;
+        color: currentColor;
+        fill: currentColor;
+        border-color: inherit;
+        z-index: 0;
+        cursor: pointer;
+    }
+
+    .btn-extraIcon {
+        @apply justify-center w-full;
+    }
+
+    .btn-extraWide {
+        @apply w-full justify-start font-sc uppercase text-lg font-normal;
+    }
+
+    .btn-extraWide-between {
+        @apply justify-center;
+    }
+
+    .btn-extra:hover {
+        color: inherit;
+        fill: inherit;
+    }
+
+    .btn-extra::before {
+        @apply border-2 rounded-lg transition-all absolute;
+        color: inherit;
+        fill: inherit;
+        border-color: inherit;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -2;
+    }
+
+    .btn-extra:hover::before {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    .btn-extra::after {
+        @apply border-0 rounded-lg transition-all absolute;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    .btn-extra:hover::after {
+        opacity: 1;
+        transform: scale(1);
+        background-color: currentColor;
+    }
+
+    .btn-extraWide.btn-extra:hover::before {
+        transform: scale(1.1);
+    }
+
+    @keyframes btn-extra-icon-animation {
+        from {
+            transform: translateX(-100%);
+            opacity: 0%;
+        }
+
+        to {
+            transform: translateX(0%);
+            opacity: 100%;
+        }
+    }
+
+    .btn-extra:hover .btn-extra-icon {
+        animation: btn-extra-icon-animation 0.5s;
+    }
+
+    .btn-extra:hover.btn-extra-icon-animation-override .btn-extra-icon {
+        animation: none;
+    }
+
+    .footer-input {
+        @apply h-12 bg-transparent border-b-2 font-accent p-0.5 box-content w-full;
+    }
+
+    .footer-input:focus {
+        outline: none;
+    }
+
+    .footer-input::placeholder {
+        @apply bg-accent-dark relative py-0.5 px-1.5 text-sm font-thin rounded-sm text-accent-darkestContent uppercase transition-all;
+        max-width: min-content;
+    }
+
+    .footer-input:focus::placeholder {
+        transform: rotateY(45deg);
+        opacity: 0;
+    }
+
+    .footer-input-textarea {
+        @apply my-4;
+        resize: none;
+        min-height: 10em;
+    }
+
+    .project-grid-element {
+        @apply cursor-pointer;
+        transition: all 0.5s;
+    }
+
+    .project-grid-element:hover {
+        @apply bg-base-darker;
+        transform: scale(1.05);
+    }
+
+    .project-grid-element-image {
+        transition: all 0.5s;
+        position: relative;
+    }
+
+    .project-grid-element-image::before {
+        @apply bg-secondary-lightest rounded-lg;
+        position: absolute;
+        opacity: 0.6;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        content: "";
+        filter: grayscale(0);
+        transition: all 0.5s;
+    }
+
+    .project-grid-element:hover .project-grid-element-image {
+        transform: scale(1.05);
+        transition-delay: 0.2s;
+        @apply border-secondary-lightest border rounded-lg;
+    }
+
+    .project-grid-element:hover .project-grid-element-image::before {
+        transition-delay: 0.1s;
+        opacity: 0;
+    }
+
+    .project-page-image-container {
+        @apply w-full h-min relative rounded-lg;
+        transform: scale(1);
+        transition: all 0.25s;
+    }
+
+    .project-page-image-container::before {
+        @apply border-2 border-secondary-lightest absolute h-full w-full rounded-lg;
+        transform: scale(1.01);
+        content: "";
+        z-index: -1;
+        transition: all 0.25s;
+    }
+
+    .project-page-image-container:hover.project-page-image-container::before {
+        @apply border-2;
+        transform: scale(0.8);
+    }
+
+    .project-page-image-container:hover {
+        @apply shadow-md shadow-secondary-lightest;
+        transform: scale(1.025);
+    }
+
+    .highlighted-project-grid-element-techs-container {
+        @apply w-min p-2 border-accent border-b xl:border-b-0 xl:border-r overflow-hidden text-secondary-darkest inline-flex justify-center xl:block xl:h-full;
+    }
+
+    .highlighted-project-grid-element {
+        @apply relative opacity-0 text-center w-full flex flex-col xl:flex-row justify-center items-center content-between cursor-pointer;
+    }
+
+    .highlighted-project-grid-element-image {
+        @apply relative w-screen sm:w-[35vw] lg:max-w-[400px] xl:max-w-[500px] bg-accent m-3 bg-cover aspect-video h-min rounded;
+        transition: all 0.5s;
+    }
+
+    .highlighted-project-grid-element-image::before {
+        @apply absolute w-full h-full bg-accent-dark opacity-50 rounded;
+        content: "";
+        left: 0;
+        top: 0;
+        transition: all 0.5s;
+    }
+
+    .highlighted-project-grid-element:hover .highlighted-project-grid-element-image::before {
+        @apply bg-transparent;
+    }
+}

@@ -1,0 +1,62 @@
+.myname-text {
+    background: linear-gradient(180deg, #020D73 0%, rgba(42, 5, 127, 0.84) 77.08%, rgba(67, 0, 135, 0.47) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.myname-gradient {
+    fill: linear-gradient(180deg, #020D73 0%, rgba(42, 5, 127, 0.84) 77.08%, rgba(67, 0, 135, 0.47) 100%);
+}
+
+@keyframes bannerAnimation {
+    0% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    90% {
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    99% {
+        transform: translateY(-100%);
+        visibility: visible;
+
+    }
+
+    100% {
+        transform: translateY(-100%);
+        visibility: hidden;
+
+    }
+}
+
+.bannerAnimation-enabler {
+
+    animation-name: bannerAnimation;
+    animation-duration: 8s;
+}
+
+.transitions-globalenabler {
+    transition: color 0.2s, border-color 0.2s,
+}
+
+.brighten-content {
+    color: rgb(161, 161, 161) !important;
+    border-color: rgb(161, 161, 161) !important;
+    -webkit-background-clip: none !important;
+    background-clip: none !important;
+    -webkit-text-fill-color: none !important;
+    text-fill-color: none !important;
+}
+
+.brighten-content-2 {
+    background: none;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: currentColor;
+    background-clip: initial;
+    text-fill-color: currentColor;
+}
